@@ -3,47 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SO Pilates Studio</title>
+  <meta name="description" content="סטודיו בוטיק לפילאטיס מכשירים בלב מודיעין. Body • Mind • Soul">
+  <meta name="keywords" content="Pilates Studio, Reformer, HIIT, מודיעין, פילאטיס מכשירים, גוף ונפש">
+  <meta name="author" content="SO Pilates Studio">
+  <title>SO Pilates Studio | פילאטיס מכשירים במודיעין - Body • Mind • Soul</title>
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+  
   <!-- AOS Library -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
+  <!-- Header -->
   <header>
-    <h1>ברוכים הבאים לסטודיו סו פילאטיס</h1>
+    <div class="logo-container">
+      <img src="images/logo-bgremoved.png" alt="SO Pilates Studio Logo" loading="lazy">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-info-circle" aria-label="About"></i> מי אנחנו</a></li>
+        <li><a href="#services"><i class="fas fa-dumbbell" aria-label="Services"></i> השירותים שלנו</a></li>
+        <li><a href="#schedule"><i class="fas fa-calendar-alt" aria-label="Schedule"></i> ל״ז שיעורים</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope" aria-label="Contact"></i> צרו קשר</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="#contact" class="cta-button">
+        <i class="fas fa-phone-alt" aria-label="Call"></i> קבע שיעור
+      </a>
+    </div>
   </header>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>סטודיו בוטיק לפילאטיס מכשירים</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Body • Mind • Soul</p>
+        <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-calendar-alt"></i> קבעו אימון ניסיון
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <!-- About Content -->
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="images/logo.png" alt="About SO Pilates Studio Logo" loading="lazy">
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h2>מי אנחנו?</h2>
+          <p>
+            סטודיו בוטיק לפילאטיס מכשירים הממוקם בלב מודיעין, אנו מאמינים בחיזוק הגוף והנפש כאחד.
+            בעזרת מגוון שיעורי רפורמר, ג'אמבורד ו-HIIT פילאטיס, אנו מספקים חוויה ייחודית שמותאמת
+            לכל רמות הכושר.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Value Grid -->
+      <div class="value-grid" data-aos="fade-up">
+        <div class="value-item">
+          <i class="fas fa-dumbbell"></i>
+          <h3>חיזוק</h3>
+          <p>בניית כוח וגמישות עם שיטות אימון מתקדמות.</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-heart"></i>
+          <h3>איזון</h3>
+          <p>שיפור שיווי המשקל והיציבות הפנימית שלך.</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-spa"></i>
+          <h3>שלווה</h3>
+          <p>חיבור עמוק בין הגוף והנפש כדי להירגע.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">השירותים שלנו</h2>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/services/1.png" alt="פרטיים וקבוצות">
+          <div class="service-content">
+            <h3><i class="fas fa-user-friends"></i> פרטיים וקבוצות</h3>
+            <p>
+              אם אתם מעדיפים אימון מותאם אישית וייעוץ ממדריכה, אנחנו מציעים גם שיעורים פרטיים. שיעורים אלו מאפשרים עבודה ממוקדת על מטרות אישיות.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Service 2 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/services/2.png" alt="מאמי'ז בייבי'ז">
+          <div class="service-content">
+            <h3><i class="fas fa-baby"></i> מאמי'ז בייבי'ז</h3>
+            <p>
+              שיעור פילאטיס מכשירים מותאם במיוחד לאמהות עם תינוקות. השיעור מתנהל באווירה תומכת ומאפשר לאמהות להתאמן בזמן שהן יחד עם תינוקותיהם.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Service 3 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/services/3.png" alt="לפי רמות">
+          <div class="service-content">
+            <h3><i class="fas fa-chart-line"></i> לפי רמות</h3>
+            <p>
+              שיעורים מותאמים לכל רמה – ממתחילים ועד מתקדמים. כל שיעור מתנהל בקבוצות קטנות (עד 10 משתתפות), עם דגש על התאמה אישית.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Service 4 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="images/services/4.png" alt="מותאם גיל שלישי">
+          <div class="service-content">
+            <h3><i class="fas fa-walking"></i> מותאם גיל שלישי</h3>
+            <p>
+              שיעורים המותאמים לגיל השלישי, שמתמקדים בשיפור גמישות, חיזוק שרירים ושמירה על יציבות, תוך דגש על בטיחות ונוחות.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Service 5 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+          <img src="images/services/5.png" alt="הריון ולאחר לידה">
+          <div class="service-content">
+            <h3><i class="fas fa-heartbeat"></i> הריון ולאחר לידה</h3>
+            <p>
+              שיעורים שמחזקים את הגוף ורצפת האגן, משפרים גמישות ומפחיתים כאבים, תוך דגש על חזרה הדרגתית ובטוחה לשגרה.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+          <img src="images/services/6.png" alt="מותאם נערות">
+          <div class="service-content">
+            <h3><i class="fas fa-female"></i> מותאם נערות</h3>
+            <p>
+              אימונים לנערות עם דגש על שיפור כוח, גמישות ויציבה. שיעורים במחירים נגישים כדי לפתח אורח חיים בריא ומאוזן.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <section data-aos="fade-up">
-      <h2>מי אנחנו?</h2>
-      <p>סטודיו בוטיק לפילאטיס מכשירים המשלב רפורמר, ג'אמבורד ו-HIIT פילאטיס.</p>
-    </section>
-
-    <section data-aos="fade-up">
-      <h2>השירותים שלנו</h2>
-      <p>מגוון רחב של שירותים לחיזוק הגוף והנפש.</p>
-    </section>
-
-    <section data-aos="fade-up">
-      <h2>צרו קשר</h2>
-      <form action="https://formspree.io/f/mwppngke" method="POST">
-        <input type="text" name="name" placeholder="שם" required>
-        <input type="email" name="_replyto" placeholder="דוא״ל" required>
-        <textarea name="message" placeholder="הודעה" required></textarea>
-        <button type="submit">שלח</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- AOS Library -->
+  <section id="studio-plans" class="plans-section">
+    <div class="container">
+      <h1 class="section-title" data-aos="fade-up">מסלולי הסטודיו</h1>
+      <div class="iframe-container" data-aos="fade-up" data-aos-delay="200">
+        <iframe
+          src="https://www-so-pilates-co-il.filesusr.com/html/69fa0b_b822b7758fb244b81d47bb758de203e7.html"
+          title="מסלולי הסטודיו"
+          frameborder="0"
+          width="100%"
+          height="500"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <h1 class="section-title" data-aos="fade-up" data-aos-delay="400">לוח זמנים שבועי</h1>
+      <div class="iframe-container" data-aos="fade-up" data-aos-delay="600">
+        <iframe
+          src="https://www-so-pilates-co-il.filesusr.com/html/69fa0b_b87e10d263e2b43b5a13e9e2eba2d1fc.html"
+          title="לוח זמנים שבועי"
+          frameborder="0"
+          width="100%"
+          height="500"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and Tagline -->
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="SO Pilates Studio Logo" class="footer-logo" loading="lazy">
+        <p class="footer-tagline">סטודיו בוטיק לפילאטיס מכשירים - Body • Mind • Soul</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>קישורים מהירים</h3>
+        <ul>
+          <li><a href="#about">מי אנחנו</a></li>
+          <li><a href="#services">השירותים שלנו</a></li>
+          <li><a href="#schedule">לו״ז שיעורים</a></li>
+          <li><a href="#pricing">תמחור</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#contact">צרו קשר</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <h3>פרטי יצירת קשר</h3>
+        <p>כתובת: עמק דותן 23, מודיעין</p>
+        <p>טלפון: <a href="tel:+972547877342">054-787-7342</a></p>
+        <p>אימייל: <a href="mailto:sopilates23@gmail.com">sopilates23@gmail.com</a></p>
+        <p>וואצפ: <a href="https://wa.me/972547877342" target="_blank">שלח הודעה</a></p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3>עקבו אחרינו</h3>
+        <a href="https://www.instagram.com/so_pilates_studio/?igsh=ZGw5bnFhMWxlbWo3" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61557088995577&mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+  
+      <!-- Map Embed -->
+      <div class="footer-map">
+        <h3>המיקום שלנו</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.723861563532!2d35.006275315435616!3d31.896984681241762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c661835d9c85%3A0x99cfac9e037fca70!2sEmek%20Dotan%20St%2023%2C%20Modiin!5e0!3m2!1sen!2sil!4v1700000000000"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> סטודיו בוטיק לפילאטיס SO. כל הזכויות שמורות.</p>
+        <p>פותח באהבה על ידי <a href="https://fumez-wd.netlify.app/" target="_blank">פיומז - עיצובי אתרים</a>.</p>
+      </div>
+  </footer>
+  
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    // Dynamic Year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
-  <!-- Custom JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
