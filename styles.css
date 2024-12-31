@@ -1,0 +1,33 @@
+/* Global Styles */
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F0E1;
+    color: #222222;
+    direction: rtl;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    font-family: 'Assistant', sans-serif;
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form */
+  form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
