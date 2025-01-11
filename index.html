@@ -20,6 +20,10 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
   
@@ -171,36 +175,9 @@
       </div>
     </div>
   </section>
-
-  <section id="studio-plans" class="plans-section">
-    <div class="container">
-      <h1 class="section-title" data-aos="fade-up">מסלולי הסטודיו</h1>
-      <div class="iframe-container" data-aos="fade-up" data-aos-delay="200">
-        <iframe
-          src="https://www-so-pilates-co-il.filesusr.com/html/69fa0b_b822b7758fb244b81d47bb758de203e7.html"
-          title="מסלולי הסטודיו"
-          frameborder="0"
-          width="100%"
-          height="500"
-          loading="lazy"
-        ></iframe>
-      </div>
-      <h1 class="section-title" data-aos="fade-up" data-aos-delay="400">לוח זמנים שבועי</h1>
-      <div class="iframe-container" data-aos="fade-up" data-aos-delay="600">
-        <iframe
-          src="https://www-so-pilates-co-il.filesusr.com/html/69fa0b_b87e10d263e2b43b5a13e9e2eba2d1fc.html"
-          title="לוח זמנים שבועי"
-          frameborder="0"
-          width="100%"
-          height="500"
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </section>
   
 
-
+  
   <section id="gallery" class="gallery-section">
     <div class="container">
       <h2 class="section-title" data-aos="fade-up">גלריה</h2>
@@ -245,6 +222,53 @@
     </div>
   </section>
   
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <!-- Section Title -->
+      <h1 class="section-title" data-aos="fade-up">צרו קשר</h1>
+  
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-right">
+          <h2>שלחו לנו הודעה</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="שם מלא" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="אימייל" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="הודעה" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">שלח הודעה</button>
+          </form>
+        </div>
+  
+        <!-- Contact Details -->
+        <div class="contact-details" data-aos="fade-left">
+          <h2>פרטי יצירת קשר</h2>
+          <p><i class="fas fa-map-marker-alt"></i> כתובת: עמק דותן 23, מודיעין</p>
+          <p><i class="fas fa-phone-alt"></i> טלפון: <a href="tel:+972547877342">054-787-7342</a></p>
+          <p><i class="fas fa-envelope"></i> אימייל: <a href="mailto:sopilates23@gmail.com">sopilates23@gmail.com</a></p>
+          <p><i class="fab fa-whatsapp"></i> וואצפ: <a href="https://wa.me/972547877342" target="_blank">שלח הודעה</a></p>
+        </div>
+      </div>
+  
+      <!-- Google Map -->
+      <div class="map-container" data-aos="fade-up">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.723861563532!2d35.006275315435616!3d31.896984681241762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c661835d9c85%3A0x99cfac9e037fca70!2sEmek%20Dotan%20St%2023%2C%20Modiin!5e0!3m2!1sen!2sil!4v1700000000000"
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
   
   <!-- Footer -->
   <footer class="footer">
@@ -301,7 +325,19 @@
       </div>
   </footer>
   
+  <div class="sales-pop" id="sales-pop">
+    <div class="sales-pop-content">
+      <h2>מבצע למצטרפים חדשים</h2>
+      <p>כרטסיית היכרות 3 שיעורים ב-150 ש"ח בלבד!</p>
+      <a href="https://rvah947m.web.arboxapp.com/membership/168902?whitelabel=Arbox&lang=he&referrer=SITE&location=16199" target="_blank" class="cta-button">הצטרפו עכשיו</a>
+      <button class="close-button" onclick="closeSalesPop()">✕</button>
+    </div>
+  </div>
+  
+  
   <!-- Scripts -->
+     <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({

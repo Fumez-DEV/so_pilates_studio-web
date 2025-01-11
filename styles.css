@@ -429,99 +429,180 @@ nav .nav-links a i {
     font-size: 1.5rem;
   }
   
-  /* Plans Section Styling */
-.plans-section {
-    padding: 4rem 2rem; /* Spacing around the section */
-    background-color: #f5f0e1; /* Soft neutral background */
-    text-align: center; /* Center-align all text */
-  }
-  
-  .section-title {
-    font-family: 'Assistant', sans-serif; /* Professional font */
-    font-size: 2.5rem; /* Large heading size */
-    font-weight: 700; /* Bold weight for emphasis */
-    color: #222222; /* Dark color for readability */
-    margin-bottom: 2rem; /* Spacing below the title */
-  }
-  
-  .iframe-container {
-    margin: 2rem 0; /* Spacing around the iframe container */
-    border: 2px solid #c5a880; /* Accent border color */
-    border-radius: 12px; /* Rounded corners for a modern look */
-    overflow: hidden; /* Prevent iframes from overflowing */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .iframe-container iframe {
-    width: 100%; /* Full width for responsiveness */
-    height: 500px; /* Fixed height for desktop */
-    border: none; /* Remove iframe border */
-    border-radius: 12px; /* Match container's rounded corners */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 2rem; /* Reduce title size on smaller screens */
-    }
-  
-    .iframe-container iframe {
-      height: 400px; /* Adjust iframe height for tablets */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .section-title {
-      font-size: 1.8rem; /* Further reduce title size on mobile */
-    }
-  
-    .iframe-container iframe {
-      height: 300px; /* Adjust iframe height for mobile devices */
-    }
-  }
-  
   /* Gallery Section */
-.gallery-section {
+  .gallery-section {
+    padding: 4rem 2rem;
+    background-color: #f5f0e1; /* Match theme */
+  }
+  
+  .gallery-section .section-title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222222;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Contact Section */
+.contact-section {
   padding: 4rem 2rem;
-  background-color: #f5f0e1; /* Match theme */
+  background-color: #f5f0e1;
+  text-align: center;
 }
 
-.gallery-section .section-title {
+.section-title {
   font-family: 'Assistant', sans-serif;
   font-size: 2.5rem;
-  text-align: center;
+  font-weight: 700;
+  color: #222222;
   margin-bottom: 2rem;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   color: #222222;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+.contact-form .form-group {
+  margin-bottom: 1rem;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img {
+.contact-form input, 
+.contact-form textarea {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  padding: 0.8rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.gallery-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.contact-form button {
+  background-color: #c5a880;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.contact-form button:hover {
+  background-color: #b38e6a;
+}
+
+/* Contact Details */
+.contact-details {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.contact-details p {
+  font-size: 1.4rem;
+  line-height: 2.6;
+  color: #444444;
+  margin: 0.5rem 0;
+}
+
+.contact-details i {
+  color: #c5a880;
+  margin-right: 0.5rem;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 2rem;
+  border: 2px solid #c5a880;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form h2, 
+  .contact-details h2 {
+    font-size: 1.5rem;
+  }
 }
 
   /* Footer Styling */
@@ -720,4 +801,158 @@ nav .nav-links a i {
         padding: 0.6rem;
         font-size: 0.9rem;
     }
+}
+
+/* Sales Pop Wrapper */
+.sales-pop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: linear-gradient(145deg, #fffdf7, #f5f0e1);
+  border: 2px solid #c5a880;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeInSlideUp 1s ease forwards, bounce 1.5s 1.5s ease infinite alternate;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Content Styling */
+.sales-pop-content {
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+}
+
+.sales-pop h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease;
+}
+
+.sales-pop p {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.2s ease;
+}
+
+.sales-pop .cta-button {
+  display: inline-block;
+  background: linear-gradient(145deg, #c5a880, #b38e6a);
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: fadeIn 1.4s ease;
+}
+
+.sales-pop .cta-button:hover {
+  background: #9e7b59;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sales-pop .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666666;
+  transition: color 0.3s ease;
+}
+
+.sales-pop .close-button:hover {
+  color: #000000;
+}
+
+/* Animations */
+@keyframes fadeInSlideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Styles */
+
+/* For tablets and small laptops */
+@media (max-width: 768px) {
+  .sales-pop {
+    width: 90%; /* Slightly wider to fill more space */
+    right: 5%; /* Center the pop-up more accurately */
+    bottom: 15px; /* Add some padding from the bottom */
+    font-size: 0.95rem; /* Slightly reduce font size for better fit */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly enhance shadow for visibility */
+  }
+
+  .sales-pop .cta-button {
+    padding: 0.7rem 1.4rem; /* Increase padding for easier tapping */
+    font-size: 1rem; /* Maintain readability */
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .sales-pop {
+    width: 95%; /* Almost full-width for smaller screens */
+    right: 2.5%; /* Center properly on smaller screens */
+    bottom: 12px; /* Slightly adjust bottom padding */
+    font-size: 0.9rem; /* Adjust font size for readability */
+    padding: 1rem; /* Add internal spacing for better layout */
+  }
+
+  .sales-pop h2 {
+    font-size: 1.4rem; /* Adjust headline size */
+    line-height: 1.2; /* Tighter line height for compact layout */
+  }
+
+  .sales-pop p {
+    font-size: 0.95rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Slightly increase line height for readability */
+  }
+
+  .sales-pop .cta-button {
+    padding: 0.5rem 1rem; /* Smaller padding for smaller screens */
+    font-size: 0.85rem; /* Compact button font */
+    border-radius: 5px; /* Slightly round button corners */
+  }
 }
