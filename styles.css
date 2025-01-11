@@ -914,45 +914,9 @@ nav .nav-links a i {
 
 /* Responsive Styles */
 
-/* For tablets and small laptops */
+/* Completely hide on smartphones */
 @media (max-width: 768px) {
   .sales-pop {
-    width: 90%; /* Slightly wider to fill more space */
-    right: 5%; /* Center the pop-up more accurately */
-    bottom: 15px; /* Add some padding from the bottom */
-    font-size: 0.95rem; /* Slightly reduce font size for better fit */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly enhance shadow for visibility */
-  }
-
-  .sales-pop .cta-button {
-    padding: 0.7rem 1.4rem; /* Increase padding for easier tapping */
-    font-size: 1rem; /* Maintain readability */
-  }
-}
-
-/* For smartphones */
-@media (max-width: 480px) {
-  .sales-pop {
-    width: 95%; /* Almost full-width for smaller screens */
-    right: 2.5%; /* Center properly on smaller screens */
-    bottom: 12px; /* Slightly adjust bottom padding */
-    font-size: 0.9rem; /* Adjust font size for readability */
-    padding: 1rem; /* Add internal spacing for better layout */
-  }
-
-  .sales-pop h2 {
-    font-size: 1.4rem; /* Adjust headline size */
-    line-height: 1.2; /* Tighter line height for compact layout */
-  }
-
-  .sales-pop p {
-    font-size: 0.95rem; /* Adjust paragraph size */
-    line-height: 1.4; /* Slightly increase line height for readability */
-  }
-
-  .sales-pop .cta-button {
-    padding: 0.5rem 1rem; /* Smaller padding for smaller screens */
-    font-size: 0.85rem; /* Compact button font */
-    border-radius: 5px; /* Slightly round button corners */
+    display: none; /* Hide the sales pop on screens smaller than 480px */
   }
 }

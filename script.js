@@ -83,3 +83,23 @@ function toggleDescription(button) {
     button.textContent = "הצג פרטים";
   }
 }
+
+function handleAOS() {
+  if (window.innerWidth > 768) {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120
+    });
+  } else {
+    AOS.init({
+      disable: true
+    });
+  }
+}
+
+// Run on initial load
+handleAOS();
+
+// Re-check on window resize
+window.addEventListener('resize', handleAOS);
