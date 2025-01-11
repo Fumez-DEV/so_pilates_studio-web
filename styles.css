@@ -117,7 +117,7 @@ nav .nav-links a i {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Full-screen height */
+    height: 93vh; /* Full-screen height */
     width: 100%; /* Full width */
     margin: 0; /* Remove margins */
     padding: 0; /* Remove padding */
@@ -211,7 +211,7 @@ nav .nav-links a i {
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .hero {
-      height: 70vh; /* Adjust height for tablets */
+      height: 90vh; /* Adjust height for tablets */
     }
     .hero-content h1 {
       font-size: 2.2rem;
@@ -227,7 +227,7 @@ nav .nav-links a i {
   
   @media (max-width: 480px) {
     .hero {
-      height: 60vh; /* Adjust height for smaller devices */
+      height: 86vh; /* Adjust height for smaller devices */
     }
     .hero-content h1 {
       font-size: 1.8rem;
@@ -480,6 +480,50 @@ nav .nav-links a i {
     }
   }
   
+  /* Gallery Section */
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #f5f0e1; /* Match theme */
+}
+
+.gallery-section .section-title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222222;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
   /* Footer Styling */
 .footer {
     background-color: #222222;
