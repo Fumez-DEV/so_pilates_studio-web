@@ -37,3 +37,13 @@ window.addEventListener('scroll', () => {
 
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+// Show the popup after 3 seconds
+setTimeout(() => {
+  document.getElementById('popupMessage').style.display = 'block';
+}, 3000);
+
+// Close the popup when the close button is clicked
+document.getElementById('closePopup').addEventListener('click', () => {
+  document.getElementById('popupMessage').style.display = 'none';
+});
