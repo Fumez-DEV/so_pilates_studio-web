@@ -547,6 +547,53 @@ nav .nav-links a i {
     transform: scale(1.1);
   }
 
+  /* Mobile Optimizations */
+@media (max-width: 768px) {
+  .gallery-section {
+      padding: 3rem 1rem; /* Less padding for tablets */
+  }
+
+  .gallery-section .section-title {
+      font-size: 2.8rem; /* Slightly smaller title */
+  }
+
+  .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More compact layout */
+      gap: 0.8rem; /* Reduce gap for tablets */
+  }
+
+  .gallery-item {
+      border-radius: 10px; /* Slightly rounded corners */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-section {
+      padding: 2rem 0.5rem; /* Minimal padding for small screens */
+  }
+
+  .gallery-section .section-title {
+      font-size: 2.6rem; /* Smaller title for mobile */
+  }
+
+  .gallery-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for better layout on small screens */
+      gap: 0.5rem; /* Tighten gaps for small screens */
+  }
+
+  .gallery-item {
+      border-radius: 6px; /* Compact corner radius */
+  }
+
+  .gallery-item:hover {
+      transform: scale(1.02); /* Slight hover effect for mobile */
+  }
+
+  .gallery-item:hover img {
+      transform: scale(1.05); /* Reduced zoom effect on hover */
+  }
+}
+
   /* Contact Section */
 .contact-section {
   padding: 4rem 2rem;
