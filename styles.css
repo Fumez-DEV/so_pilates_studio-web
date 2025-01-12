@@ -855,7 +855,7 @@ nav .nav-links a i {
 #scroll-to-top {
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    left: 2rem;
     background-color: #C5A880;
     color: #FFFFFF;
     border: none;
